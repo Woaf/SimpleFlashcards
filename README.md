@@ -21,3 +21,11 @@ Otherwise, I think the usage is self-explanatory - but if you come across someth
 ### Addendum 1
 
 I added the icon I used for this app, because it appears in the .pro file. Its a little start icon, which I got from this amazing website: https://icon-icons.com/
+
+### Addendum 2
+
+I included an executable in the 'Deploy' folder that you can run and try the program for yourself. (Its only a Windows executable.)
+
+You will need to have MSVC Redistributable installed on your device (x64 is preferred), which you can download here: https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
+
+Also, a decent anti-virus will delete the program once you download it.

@@ -24,6 +24,8 @@ HEADERS += \
 QT += widgets
 
 DISTFILES += \
+	Deploy.zip \
+	README.md \
 	appicon.ico \
 	examples/dict.txt \
 	examples/verbs.txt
