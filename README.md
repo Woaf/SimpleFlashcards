@@ -17,3 +17,7 @@ You can use the "Flip" button to 'filp' the card back and forth, and the "Previo
 There is a small indicator on the top left corner, displaying the number of word-pairs, and where you are in the list. 
 
 Otherwise, I think the usage is self-explanatory - but if you come across something weird, then drop a comment and I'll check it out!
+
+### Addendum 1
+
+I added the icon I used for this app, because it appears in the .pro file. Its a little start icon, which I got from this amazing website: https://icon-icons.com/
