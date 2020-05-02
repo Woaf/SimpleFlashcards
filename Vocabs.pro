@@ -22,3 +22,7 @@ HEADERS += \
 	card.h
 
 QT += widgets
+
+DISTFILES += \
+	examples/dict.txt \
+	examples/verbs.txt
