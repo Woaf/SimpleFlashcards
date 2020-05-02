@@ -1,8 +1,6 @@
 #include "card.h"
 
-#include <algorithm>
 #include <fstream>
-#include <iostream>
 
 Card::Card(QWidget *parent) :
     QMainWindow         (parent),
@@ -78,8 +76,7 @@ void Card::ReadDictionaryFromFile () {
 void Card::InitializeWordList()
 {
     ReadDictionaryFromFile ();
-    if (!dictionary.empty ())
-        std::next_permutation (dictionary.begin (), dictionary.end ());
+    // MIX WORDS (LATER MAYBE)
 }
 
 void Card::DisplayWord()
@@ -109,7 +106,6 @@ void Card::FlipCard()
 
 void Card::PrevCard()
 {
-    std::cout << index - 1 << std::endl;
     if (index - 1 == std::numeric_limits<size_t>::max ()) {
         index = dictionary.size () - 1;
     } else {
