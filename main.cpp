@@ -1,8 +1,12 @@
-#include <QCoreApplication>
+#include <QApplication>
+#include <card.h>
 
-int main(int argc, char *argv[])
+int main (int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+    QApplication a (argc, argv);
 
-    return a.exec();
+    Card* c = new Card ();
+    c->show ();
+
+    return a.exec ();
 }
