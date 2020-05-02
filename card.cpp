@@ -57,7 +57,7 @@ void Card::ReadDictionaryFromFile () {
     if (!dictFile.is_open ()) {
         QMessageBox::warning (nullptr,
                               "File not found!",
-                              "Dictinary file not found!\nPlease make sure you have 'dict.txt' in your program directory.");
+                              "Dictinary file not found!\nPlease restart the program, and select a valid file.");
         return;
     }
 
