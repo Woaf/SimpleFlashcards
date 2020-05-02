@@ -81,11 +81,10 @@ void Card::InitializeWordList()
 
 void Card::DisplayWord()
 {
-
     showKey = true;
     if (!dictionary.empty ()) {
-        enumerator->setText (QString::number (index % dictionary.size() + 1) + "/" + QString::number (dictionary.size()));
-        text->setText (QString (dictionary.at (index % dictionary.size()).first.c_str ()));
+        enumerator->setText (QString::number (index + 1) + "/" + QString::number (dictionary.size()));
+        text->setText (QString (dictionary.at (index).first.c_str ()));
         flipButton->setText ("Flip (see definition)");
     }
 }
@@ -94,10 +93,10 @@ void Card::FlipCard()
 {
     if (!dictionary.empty ()) {
         if (!showKey) {
-            text->setText (QString (dictionary.at (index % dictionary.size()).first.c_str ()));
+            text->setText (QString (dictionary.at (index).first.c_str ()));
             flipButton->setText ("Flip (see definition)");
         } else {
-            text->setText (QString (dictionary.at (index % dictionary.size()).second.c_str ()));
+            text->setText (QString (dictionary.at (index).second.c_str ()));
             flipButton->setText ("Flip (see original)");
         }
         showKey = !showKey;
